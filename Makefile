@@ -17,6 +17,8 @@ OBJS = $(SRCS:.c=.o)
 all: $(TARGET)
 	./$(TARGET)
 
+build: $(TARGET)
+
 # Regra para criar o executável
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
